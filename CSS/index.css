@@ -1,0 +1,284 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #232323;
+  height: 98vh;
+}
+
+#chatContainer {
+  border-radius: 5px  5px  15px  15px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(105, 105, 105, 0.2);
+  -webkit-box-shadow: 0px 0px 5px 5px #797979;
+          box-shadow: 0px 0px 5px 5px #797979;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#chatContainer .Chatheader {
+  width: 100%;
+  height: 5%;
+  min-height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #797979;
+  color: #333;
+  margin-top: 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#chatContainer .Chatheader h1 {
+  margin: 0px;
+  width: 60%;
+  text-align: end;
+}
+
+#chatContainer .Chatheader #DeleteMessage {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 30%;
+}
+
+#chatContainer #chatPage {
+  width: 100%;
+  height: 90%;
+  overflow-y: scroll;
+}
+
+#chatContainer #chatPage .whiteContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+#chatContainer #chatPage .whiteContainer .whiteMessage {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 15px 0px 15px 15px;
+  background-color: rgba(73, 89, 89, 0.2);
+  max-width: 60%;
+}
+
+#chatContainer #chatPage .whiteContainer .whiteMessage h5 {
+  height: 3px;
+  color: beige;
+  font-size: 10px;
+}
+
+#chatContainer #chatPage .whiteContainer .whiteMessage h5 span {
+  color: bisque;
+}
+
+#chatContainer #chatPage .whiteContainer .whiteMessage p {
+  color: white;
+}
+
+#chatContainer #chatPage .whiteContainer .whiteMessage img {
+  max-width: 350px;
+  max-height: 350px;
+  width: 60%;
+  height: 100%;
+  background-color: white;
+}
+
+#chatContainer #chatPage .whiteContainer .whiteMessage a {
+  text-decoration: none;
+  color: white;
+}
+
+#chatContainer #chatPage .greenContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+#chatContainer #chatPage .greenContainer .greenMessage {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0px 15px 15px 15px;
+  background-color: rgba(73, 89, 89, 0.2);
+  max-width: 60%;
+}
+
+#chatContainer #chatPage .greenContainer .greenMessage h5 {
+  height: 3px;
+  color: beige;
+  font-size: 10px;
+}
+
+#chatContainer #chatPage .greenContainer .greenMessage h5 span {
+  color: bisque;
+}
+
+#chatContainer #chatPage .greenContainer .greenMessage a {
+  text-decoration: none;
+  color: white;
+}
+
+#chatContainer #chatPage .greenContainer .greenMessage p {
+  color: white;
+}
+
+#chatContainer #chatPage .greenContainer .greenMessage img {
+  max-width: 350px;
+  max-height: 350px;
+  width: 60%;
+  height: 100%;
+  background-color: rgba(73, 89, 89, 0.2);
+  background-color: white;
+}
+
+#chatContainer #chatPage .notifyContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+#chatContainer #chatPage .notifyContainer .notifyMessage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  background-color: rgba(73, 89, 89, 0.2);
+  max-width: 60%;
+}
+
+#chatContainer #chatPage .notifyContainer .notifyMessage h5 {
+  height: 3px;
+  color: beige;
+  font-size: 10px;
+}
+
+#chatContainer #chatPage .notifyContainer .notifyMessage h5 span {
+  color: bisque;
+}
+
+#chatContainer #chatPage .notifyContainer .notifyMessage p {
+  height: 3px;
+  margin-left: 8px;
+  font-size: 10px;
+  color: orange;
+}
+
+#chatContainer #ChatBtnsContainer {
+  width: 100%;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 35px;
+}
+
+#chatContainer #ChatBtnsContainer input {
+  width: 90%;
+  border: 0;
+  outline: 0;
+  background-color: rgba(105, 89, 89, 0.2);
+  color: white;
+}
+
+#chatContainer #ChatBtnsContainer button {
+  width: 5%;
+  border: 0;
+  background-color: rgba(105, 89, 89, 0.2);
+}
+
+.textDesignContainer {
+  height: 150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #444;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 10px;
+  padding-right: 2px;
+  padding-left: 5px;
+  border-radius: 15px;
+}
+
+mark {
+  background: papayawhip;
+}
+
+.space {
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+}
+
+audio::-webkit-media-controls-enclosure, audio::-webkit-media-controls-panel, audio::-webkit-media-controls-panel {
+  background-color: gray;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trial Version</title>
+        <link rel="stylesheet" href="./CSS/index.css">
+    </head>
+
+<body>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+		https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+	<script>
+	// Your web app's Firebase configuration
+	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+	var firebaseConfig = {
+		apiKey: "AIzaSyAOZYQYzlRxiwErNzwmu-qrBieUlDgFSV0",
+		authDomain: "base-23.firebaseapp.com",
+		databaseURL: "https://base-23-default-rtdb.firebaseio.com",
+		projectId: "base-23",
+		storageBucket: "base-23.appspot.com",
+		messagingSenderId: "753573708266",
+		appId: "1:753573708266:web:1eee8795dcc8e98d0bf293",
+		measurementId: "G-3H5BF4M0XT"
+	};
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
+	firebase.analytics();
+	</script>		
+	<script 	src="https://code.jquery.com/jquery-3.5.1.js"
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			crossorigin="anonymous">
+	</script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+
+
+    <div class="textDesignContainer" style="width: fit-content; position:relative; margin-left: 0; padding-left: 0;">
+        
+        <label style="display: flex; width: 40px; justify-content: space-between;" for="boldInput"><b>B</b>
+            <input type="radio" id="textBold" name="boldInput" id="boldInputBtn">
+        </label>
+        
+        <label style="display: flex; width: 40px; justify-content: space-between;" for="italicInput"><i>I</i>
+            <input type="radio" id="textItalic"  name="italicInput" id="italicInputBtn">
+        </label>
+        
+        <label style="display: flex; width: 40px; justify-content: space-between;" for="underlineInput"><u>U</u>
+            <input type="radio" id="textUnderline"  name="underlineInput" id="underlineInputBtn">
+        </label>
+        
+        <label style="display: flex; width: 40px; justify-content: space-between;" for="markInput"><mark>H</mark>
+            <input type="radio" id="textHighlight"  name="markInput" id="markInputBtn">
+        </label>
+    
+    </div>
+
+    <div id="chatContainer">
+        
+        <div class="Chatheader">
+            <h1 id="usernameHeader">User Chat with ?</h1>
+            <button id="DeleteMessage" >Delete Messages</button>
+        </div>
+
+        <div id="chatPage">
+
+            <div class="notifyContainer">
+                <div class="space"></div>
+                <div class="notifyMessage">
+                    <h5 style="opacity: 0.5;"><span > Admin </span> 6-Sep-2019 <span>Fri</span> <span style="color:palegreen;">8:30 PM</span></h5>
+                    <p style="opacity: 0.8;">Welcome to 23</p>
+                </div>
+                <div class="space"></div>
+            </div>
+<!-- 
+            <div class="whiteContainer">
+                <div class="whiteMessage">
+                    <h5 style="opacity:0.5;"><span> Darling</span> 6-Sep-2019 <span>Fri</span> <span style="color:palegreen;">8:30 PM</span></h5>
+                    <audio src="./video/Kalki Bgm.mp3" style="margin: 0; width: 250px; " controls ></audio>
+                </div>
+                <div class="space"></div>
+            </div>
+
+            <div class="greenContainer">
+                <div class="space"></div>
+                <div class="greenMessage">
+                    <h5 style="opacity:0.5;"><span> Darling</span> 6-Sep-2019 <span>Fri</span> <span style="color:palegreen;">8:30 PM</span></h5>
+                    <audio src="./video/Kalki Bgm.mp3" style="margin: 0; width: 250px; " controls ></audio>
+                </div>
+            </div>
+
+            <div class="greenContainer">
+                <div class="space"></div>
+                <div class="greenMessage">
+                    <h5 style="opacity:0.5;"><span> Darling</span> 6-Sep-2019 <span>Fri</span> <span style="color:palegreen;">8:30 PM</span></h5>
+                    <video src="./video/Attention.mp4" style="margin: 0; width: 200px; height: 200px;" controls></video>
+                </div>
+            </div> -->
+
+        </div>
+
+        <div id="ChatBtnsContainer">
+            <button style="min-width: 40px; min-height: 35px; " ><img style="width: 65%; min-width: 15px ; margin: 0;" src="data:image/png;base64,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" alt=""></button>
+            <input  id="messageInput"       style="min-height: 35px;" type="text"  placeholder="Type Message here!..">
+            <button id="fileSelectBtn"      style="min-width: 40px; min-height: 35px; " ><img style="width: 65%; min-width: 15px ; margin: 0;" src="data:image/png;base64,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" alt=""> </button>
+            <input  id="fileSelectBtnInput" style="display: none;"  type="file">
+            <button id="sendBtn"            style="display: none; opacity: 0; visibility: hidden;">send</button>
+            <button id="send-selected-file" style="display: none;">click to Send Selected File</button>
+            <button id="CancelFileSend"     style="display: none;">X</button>
+        </div>
+
+    </div>
+
+</body>
+
+    <script src="./JS/index.js"></script>
+    <script src="./fileSending.js"></script>
+
+</html>
